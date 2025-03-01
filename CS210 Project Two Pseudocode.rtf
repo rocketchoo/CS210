@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2818
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Pseudocode for Airgead Banking App\
+\
+1. Start Program\
+2. Display The Welcome Message\
+3. Prompt The User for Input:\
+- Display \'93Enter Initial Investment Amount: \'93\
+- Get initial investment amount\
+- Display \'93Enter Monthly Deposit: \'93\
+- Get monthly deposit amount\
+- Display \'93Enter Annual Interest: \'93\
+- Get annual interest rate\
+- Display \'93Enter Number of Years: \'93\
+- Get number of years\
+4. Display The Input Summary:\
+- Display \'93Initial Investment Amount:\'94 followed by the initial investment amount\
+- Display \'93Monthly Deposit:\'94 followed by the monthly deposit amount\
+- Display \'93Annual Interest:\'94 followed by the annual interest rate\
+- Display \'93Number of Years:\'94 followed by the number of years\
+5. Prompt to Continue:\
+- Display \'93Press any key to continue\'85\'94\
+- Wait a moment for the user input\
+6. Calculate and Display the Report Without Monthly Deposits:\
+- Initialize balance to initial investment amount\
+- Initialise annual interest rate as a decimal\
+- Display \'93Year/tYear End Balance/tYear End Earned Interest\'94\
+- Display \'93\'97\'97\'97\'93\
+- For each year starting from 1 to the number of years:\
+	- Calculate the interest earned as balance multiplied by the annual interest rate\
+		- Add the interest that was earned to the balance\
+		- Display year, balance, and interest that wasearned\
+7. Calculate and Display the Report with Monthly Deposits:\
+- Initialise the balance to the initial investment amount\
+- Initialise the monthly interest rate as annual interest, divided by 12\
+- Display \'93Year/tYear End Balance/tYear End Earned Interest\'94\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - Display \'93\'97\'97\'97\'93\
+- For each year from 1 to the number of years:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	- Initialise the interest earned for the year to 0 \
+		- For each month from 1 to 12:\
+			- Calculate monthly interest as balance, multiplied by monthly interest rate\
+			- Add the monthly interest to the already earned interest\
+			- Add monthly deposit to balance\
+			- Add monthly interest to balance\
+		- Display year, balance, and interest earned\
+8. END the program\
+}
